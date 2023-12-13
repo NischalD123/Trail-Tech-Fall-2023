@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/survey_nav_graph"
+    app:startDestination="@id/screeningFragment">
+
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="edu.vt.smarttrail.surveyactivity.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="edu.vt.smarttrail.surveyactivity.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" />
+    <fragment
+        android:id="@+id/screeningFragment"
+        android:name="edu.vt.smarttrail.surveyactivity.ScreeningFragment"
+        android:label="fragment_screening"
+        tools:layout="@layout/fragment_screening" >
+        <action
+            android:id="@+id/action_screeningFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/action_screeningFragment_to_ineligibleFragment"
+            app:destination="@id/ineligibleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ineligibleFragment"
+        android:name="edu.vt.smarttrail.surveyactivity.IneligibleFragment"
+        android:label="fragment_ineligible"
+        tools:layout="@layout/fragment_ineligible" />
+</navigation>

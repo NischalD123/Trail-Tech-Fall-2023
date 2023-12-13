@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionsActivity">
+
+    <ImageView
+        android:id="@+id/SmarTrail_icon"
+        android:layout_width="380dp"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SmarTrail_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Permissions Requested:"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/check_GPS"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/SmarTrail_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/green_btn"
+        android:text="Location Permission"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/check_Screentime"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/check_GPS"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="105dp"
+        android:background="@drawable/green_btn"
+        android:text="Screentime Permission"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

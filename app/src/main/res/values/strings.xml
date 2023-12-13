@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">SmarTrail</string>
+    <string name="title_activity_gmaps">GMapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- For the open and close functionality of hamburger menu -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <!--    Survey Section Strings: -->
+    <string name="start_fragment_text">Start today\'s survey</string>
+    <string name="finish_fragment_text">Great! Thank you very much for completing the survey and helping us out.</string>
+    <string name="next_survey_time">Your next survey will be in _______.</string>
+    <string name="finish">Submit the Survey</string>
+    <string name="sign_out">Sign out</string>
+    <string name="screen_time">Screen Time</string>
+    <string name="survey">Start Survey</string>
+    <string name="gps">GPS</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string-array name="states">
+        <item>Virginia</item>
+        <item>Georgia</item>
+        <item>North Carolina</item>
+        <item>Tennessee</item>
+        <item>West Virginia</item>
+        <item>Maryland</item>
+        <item>Pennsylvania</item>
+        <item>New Jersey</item>
+        <item>New York</item>
+        <item>Connecticut</item>
+        <item>Massachusetts</item>
+        <item>Vermont</item>
+        <item>New Hampshire</item>
+        <item>Maine</item>
+
+    </string-array>
+
+    <!-- Permissions content-->
+    <string name="location_study">Capturing location data uses the user’s mobile device GPS locations to situate the answers to questions, to allow researchers to associate question answers to a location, and identify patterns and changes based on location.</string>
+    <string name="location_terms">\u2022 Users are free to change the access permission in the setting without giving a reason.\n\u2022 All the data will be anonymized by associating each participant with a different code to maximize privacy. Researchers will do their best to protect the shared information\'s confidentiality.</string>
+    <string name="screentime_study">Capturing the apps’ screen usage from the mobile device allows researchers to identify correlations between participant screen use and answers to the survey’s questions.</string>
+    <string name="screentime_terms">\u2022 Users are free to change the access permission in the setting without giving a reason.\n\u2022 All the data will be anonymized by associating each participant with a different code to maximize privacy. Researchers will do their best to protect the shared information\'s confidentiality.</string>
+    <string name="check_read">I have read and agree to the Terms and Privacy Policy.</string>
+    <string name="location_agree">I agree to share my location on SmarTrail.</string>
+    <string name="screentime_agree">I agree to share my mobile device’s screen usage on SmarTrail.</string>
+
+    <!--    Notifications-->
+    <string name="notification_title">SmarTrail Surveys</string>
+    <string name="notification_text">Time to take a survey!</string>
+    <string name="survey_notification_channel_id" translatable="false">survey_channel</string>
+    <string name="survey_notification_channel_name" translatable="true">Survey</string>
+    <string name="email">Email</string>
+    <string name="confirm_choices">CONFIRM CHOICES</string>
+</resources>

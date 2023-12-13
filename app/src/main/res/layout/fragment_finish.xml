@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".surveyactivity.FinishFragment">
+
+    <LinearLayout
+        android:id="@+id/completion_tvs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/finish_btn"
+        >
+        <TextView
+            android:id="@+id/main_completion_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="@string/finish_fragment_text"
+            android:textColor = "?android:textColorPrimary"
+            />
+        <TextView
+            android:id="@+id/next_survey_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="@string/next_survey_time"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_green"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/finish"
+        app:layout_constraintTop_toBottomOf="@+id/completion_tvs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

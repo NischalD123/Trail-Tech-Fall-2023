@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".surveyactivity.QuestionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SmarTrail"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_main_prompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:gravity="center"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize="22sp"
+                android:text="Preliminary Questions"/>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content" tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/qprompt_participate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Do you agree to participate in this survey?"/>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton android:id="@+id/yes_participate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+                    <RadioButton android:id="@+id/no_participate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content" tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/qprompt_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Are you 18 years or older?"/>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton android:id="@+id/yes_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+                    <RadioButton android:id="@+id/no_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content" tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/qprompt_long_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Are you currently starting a long-distance hike on the Appalachian Trail?"/>
+                <TextView
+                    android:id="@+id/long_dist_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="14sp"
+                    android:text="By “long distance,” we mean a hike that you anticipate will take 1 or more months."/>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton android:id="@+id/yes_long_dist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+                    <RadioButton android:id="@+id/no_long_dist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content" tools:ignore="UselessParent">
+                <TextView
+                    android:id="@+id/qprompt_thru_hike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Do you plan on thru-hiking the Appalachian Trail?"/>
+                <TextView
+                    android:id="@+id/thru_hike_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="14sp"
+                    android:text="By “thru-hiking,” we mean completing the entire 2,194 miles of the Appalachian Trail in a 12-month period.  This can be in one long hike, multiple hikes separated by time off the trail, and/or flip flopping."/>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton android:id="@+id/yes_thru_hike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        />
+                    <RadioButton android:id="@+id/no_thru_hike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        />
+                    <RadioButton android:id="@+id/not_sure_thru_hike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not sure"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/requestEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize="22sp"
+                android:text="Please supply your email address so that we can send you the gift card at the end of each month."/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEntry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:textSize="25dp"
+                    android:visibility="visible" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_green"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginVertical="15dp"
+                android:text="@string/confirm_choices"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

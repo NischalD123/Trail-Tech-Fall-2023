@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/drawer_layout"
+    tools:context=".HomeActivity"
+    android:background="@color/bg_home_screen"
+    android:orientation="horizontal"
+    >
+
+
+    <!--    Got image from: https://clipground.com/mountain-scenes-clipart.html-->
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/mountainbgimage" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_Screentime"-->
+    <!--        android:layout_width="248dp"-->
+    <!--        android:layout_height="119dp"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginEnd="80dp"-->
+    <!--        android:layout_marginBottom="315dp"-->
+    <!--        android:background="@drawable/green_btn"-->
+    <!--        android:text="@string/screen_time"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="25sp" />-->
+    <LinearLayout
+        android:id="@+id/survey_time_tvs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button_Survey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TextView
+            android:id="@+id/last_survey_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST SURVEY: NEVER"
+            android:padding="5dp"
+            android:textColor = "?android:textColorPrimary"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/next_survey_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT SURVEY: NOW!"
+            android:padding="5dp"
+            android:textColor = "?android:textColorPrimary"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            />
+        <!--        app:layout_constraintTop_toBottomOf="@id/last_survey_tv"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/button_Survey"-->
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_Survey"
+        android:layout_width="248dp"
+        android:layout_height="119dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/survey_time_tvs"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/green_btn"
+        android:text="@string/survey"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_GPS"-->
+    <!--        android:layout_width="248dp"-->
+    <!--        android:layout_height="119dp"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginEnd="80dp"-->
+    <!--        android:layout_marginBottom="470dp"-->
+    <!--        android:background="@drawable/green_btn"-->
+    <!--        android:text="@string/gps"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="25sp" />-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end|bottom"-->
+<!--        android:background="@color/purple_500"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_margin="16dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

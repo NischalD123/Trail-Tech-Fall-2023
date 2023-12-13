@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "941032054847",
+    "firebase_url": "https://gpsdb-917d9-default-rtdb.firebaseio.com",
+    "project_id": "gpsdb-917d9",
+    "storage_bucket": "gpsdb-917d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941032054847:android:b586c430ac296a781c588a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941032054847-i0d11g14o3kr1ja1ogd40n9por62s305.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyn3tXijKfAt576puIdfGzEzeyINtCmo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941032054847-i0d11g14o3kr1ja1ogd40n9por62s305.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941032054847:android:00a56f29b4474ed11c588a",
+        "android_client_info": {
+          "package_name": "edu.vt.smarttrail"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941032054847-i0d11g14o3kr1ja1ogd40n9por62s305.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyn3tXijKfAt576puIdfGzEzeyINtCmo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941032054847-i0d11g14o3kr1ja1ogd40n9por62s305.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

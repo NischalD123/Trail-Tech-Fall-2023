@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Features">
+        <menu>
+            <item
+                android:id="@+id/nav_GPS"
+                android:title="Map" />
+
+            <item
+                android:id="@+id/nav_Screentime"
+                android:title="Screen Time Usage" />
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/survey_history"
+                android:title="Survey History"/>
+            <item
+                android:id="@+id/change_password"
+                android:title="Change Password"/>
+
+            <item
+                android:id="@+id/Logout"
+                android:title="Log Out"/>
+
+        </menu>
+    </item>
+    <item android:title="Permissions">
+        <menu>
+            <item
+                android:id="@+id/locations_permission"
+                android:title="Location"/>
+
+            <item
+                android:id="@+id/screentime_permission"
+                android:title="App Usage"/>
+
+        </menu>
+    </item>
+</menu>

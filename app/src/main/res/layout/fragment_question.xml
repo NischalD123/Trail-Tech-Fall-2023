@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScrollView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SmarTrail"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/tv_section_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor = "?android:textColorPrimary"
+                />
+
+            <!--        XML built questions -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:overScrollMode="never"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/recyclerviewquestionitem" />
+
+            <LinearLayout
+                android:id="@+id/s5layout_j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <!--Section 1 Q6-->
+                <!--            10-1 -->
+                <TextView
+                    android:id="@+id/s5_tv_qprompt_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Did you complete the voluntary thru-hiker registration with the Appalachian Trail Conservancy?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q1op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yes"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q1op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/no" />
+                    <RadioButton android:id="@+id/q1op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't know or don't remember"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton android:id="@+id/q1op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I am not aware of the voluntary thru-hiker registration option"
+                        android:minHeight="48dp"
+                        />
+                </RadioGroup>
+
+                <!--            10-2 -->
+                <!--  Question 8 -->
+                <TextView
+                    android:id="@+id/s5_tv_qprompt_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Which social media apps did you use to communicate about your hiking plans before your long distance hike?  Please check all that apply."/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/q2op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook or Facebook Messenger"
+                        />
+                    <CheckBox android:id="@+id/q2op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YouTube"
+                        />
+                    <CheckBox android:id="@+id/q2op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WhatsApp"
+                        />
+                    <CheckBox android:id="@+id/q2op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Twitter"
+                        />
+                    <CheckBox android:id="@+id/q2op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram"
+                        />
+                    <CheckBox android:id="@+id/q2op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reddit"
+                        />
+                    <CheckBox android:id="@+id/q2op6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WeChat"
+                        />
+                    <CheckBox android:id="@+id/q2op7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TikTok"
+                        />
+                    <CheckBox android:id="@+id/q2op8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Snapchat"
+                        />
+                    <CheckBox android:id="@+id/q2op9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Snapchat"
+                        />
+                    <CheckBox android:id="@+id/q2op10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal website or blog"
+                        />
+                    <CheckBox android:id="@+id/q2op11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        />
+                </LinearLayout>
+
+                <!--            10-3 -->
+                <!--Q9-->
+                <TextView
+                    android:id="@+id/qprompt_09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="What is your age?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q3op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18-24"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q3op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="25-34"
+                        />
+                    <RadioButton android:id="@+id/q3op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="35-44"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q3op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="45-54"
+                        />
+                    <RadioButton android:id="@+id/q3op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="55-64"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q3op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="65 and over"
+                        />
+                </RadioGroup>
+
+                <!--            10-4 -->
+                <!--Q10-->
+                <TextView
+                    android:id="@+id/s5_tv_qprompt_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Do you consider yourself of Hispanic, Latino, or Spanish origin?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q4op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes, Mexican, Mexican American, Cuban, Puerto RicoRica, or other Hispanic, Latino, or Spanish origin"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q4op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="No, not of Hispanic, Latino, or Spanish origin"
+                        />
+                </RadioGroup>
+                <!-- 10-5 -->
+                <!--Q11-->
+                <TextView
+                    android:id="@+id/qprompt_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="What race or ethnic category do you consider yourself to be?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q5op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="White"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q5op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Native Hawaiian"
+                        />
+                    <RadioButton android:id="@+id/q5op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Black, African American"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q5op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Other Pacific Islander"
+                        />
+                    <RadioButton android:id="@+id/q5op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="American Indian, Native American, or Alaska Native"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q5op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Asian"
+                        />
+                    <RadioButton android:id="@+id/q5op6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:minHeight="48dp"
+                        />
+                </RadioGroup>
+                <!-- 10-6 -->
+                <!--Q12-->
+                <TextView
+                    android:id="@+id/qprompt_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="What is your gender?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q6op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q6op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Male"
+                        />
+                    <RadioButton android:id="@+id/q6op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non binary/Third gender"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q6op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Prefer not to answer"
+                        />
+                </RadioGroup>
+                <!-- 10-7 -->
+                <!-- Question 18 -->
+                <TextView
+                    android:id="@+id/s5_tv_qprompt_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Which information sources have you used at least once on your hike?  Please check all that apply."/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/q7op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appalachian Trail Databook (Appalachian Trail Conservancy)"
+                        />
+                    <CheckBox android:id="@+id/q7op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appalachian Trail Thru-Hike Planner (Appalachian Trail Conservancy)"
+                        />
+                    <CheckBox android:id="@+id/q7op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AWOL, The AT Guide (Miller)"
+                        />
+                    <CheckBox android:id="@+id/q7op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FarOut"
+                        />
+                    <CheckBox android:id="@+id/q7op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Regional guides and map set such as the Pennsylvania Guidebook and Maps (Appalachian Trail Conservancy)"
+                        />
+                    <CheckBox android:id="@+id/q7op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thru-Hikers Companion (Appalachian Trail Conservancy)"
+                        />
+                    <CheckBox android:id="@+id/q7op6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        />
+                </LinearLayout>
+                <!-- 10-8 -->
+                <TextView
+                    android:id="@+id/s5_tv_qprompt_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Which smartphone navigation apps have you used at least once on your hike?  Please indicate all that apply."/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/q8op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AllTrails"
+                        />
+                    <CheckBox android:id="@+id/q8op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiking Project"
+                        />
+                    <CheckBox android:id="@+id/q8op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Backcountry Navigator"
+                        />
+                    <CheckBox android:id="@+id/q8op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Komoot Maps 3D"
+                        />
+                    <CheckBox android:id="@+id/q8op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaia GPS"
+                        />
+                    <CheckBox android:id="@+id/q8op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MapMyHike"
+                        />
+                    <CheckBox android:id="@+id/q8op6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Maps"
+                        />
+                    <CheckBox android:id="@+id/q8op7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Motion X"
+                        />
+                    <CheckBox android:id="@+id/q8op8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green Tracks"
+                        />
+                    <CheckBox android:id="@+id/q8op9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="myTracks"
+                        />
+                    <CheckBox android:id="@+id/q8op10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FarOut"
+                        />
+                    <CheckBox android:id="@+id/q8op11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outdoor Navigation"
+                        />
+                    <CheckBox android:id="@+id/q8op12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PeakVisor"
+                        />
+                    <CheckBox android:id="@+id/q8op13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rambler"
+                        />
+                    <CheckBox android:id="@+id/q8op14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spyglass"
+                        />
+                    <CheckBox android:id="@+id/q8op15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strava"
+                        />
+                    <CheckBox android:id="@+id/q8op16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ViewRanger"
+                        />
+                    <CheckBox android:id="@+id/q8op17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I don't use smartphone navigation apps"
+                        />
+                    <CheckBox android:id="@+id/q8op18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--          XML-built group k  -->
+            <LinearLayout
+                android:id="@+id/s5layout_k"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <!-- 10-9 -->
+                <!--Q27-->
+                <TextView
+                    android:id="@+id/qprompt_27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="How many times did you spend time in town(s) near the Appalachian Trail in the last 7 days (more time than just walking through the town)?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q9op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q9op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="1"
+                        />
+                    <RadioButton android:id="@+id/q9op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2-3"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q9op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="More than 3"
+                        />
+                </RadioGroup>
+                <!-- 10-10 -->
+                <!--Q28-->
+                <TextView
+                    android:id="@+id/qprompt_28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="How long in total did you talk with other hikers while hiking on the trail yesterday?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q10op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 - 30 mins"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q10op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="30 mins - 1 hour"
+                        />
+                    <RadioButton android:id="@+id/q10op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 hour - 2 hours"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q10op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="More than 2 hours"
+                        />
+                </RadioGroup>
+
+                <!--            10-11 -->
+                <!--Q29-->
+                <TextView
+                    android:id="@+id/qprompt_29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="How long did you talk with your family/friends remotely yesterday?"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q11op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not at all!"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q11op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="10 mins - 30 mins"
+                        />
+                    <RadioButton android:id="@+id/q11op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31 mins - 1 hour"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q11op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="More than 1 hour"
+                        />
+                </RadioGroup>
+
+                <!--            10-12 -->
+                <!-- Question 30 -->
+                <TextView
+                    android:id="@+id/qprompt_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="How did you connect with your family/friends in the last 7 days? Please check all that apply."/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/q12op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Messaging apps (Whatsapp, SMS, etc)"
+                        />
+                    <CheckBox android:id="@+id/q12op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voice calls"
+                        />
+                    <CheckBox android:id="@+id/q12op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video calls"
+                        />
+                    <CheckBox android:id="@+id/q12op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social media"
+                        />
+                    <CheckBox android:id="@+id/q12op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I did not connect with my family/friends in the last 7 days."
+                        />
+                </LinearLayout>
+
+                <!--            10-13 -->
+                <!-- Question 31 -->
+                <TextView
+                    android:id="@+id/qprompt_31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Where did you talk with other hikers during the last 7 days? Please check all that apply."/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <CheckBox android:id="@+id/q13op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="While eating meals"
+                        />
+                    <CheckBox android:id="@+id/q13op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Around campfire"
+                        />
+                    <CheckBox android:id="@+id/q13op2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="At the shelters, campsites, hostels, etc."
+                        />
+                    <CheckBox android:id="@+id/q13op3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="While hiking at the same time"
+                        />
+                    <CheckBox android:id="@+id/q13op4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        />
+                    <CheckBox android:id="@+id/q13op5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I did not talk with other hikers in the last 7 days."
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s5layout_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <!--            10-14 -->
+                <TextView
+                    android:id="@+id/q10_14tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "?android:textColorPrimary"
+                    android:textSize="22sp"
+                    android:text="Each hiking condition has different characteristics. Please choose one of the hypothetical conditions."/>
+                <ImageView
+                    android:id="@+id/q10_14iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/qtenimg" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton android:id="@+id/q14op0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option A"
+                        android:minHeight="48dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/q14op1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Option B"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--Bottom progress bar-->
+            <LinearLayout
+                android:id="@+id/ll_progress_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="16dp">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="10"
+                    android:minHeight="50dp"
+                    android:progress="0"
+                    android:indeterminate="false"
+                    style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColorHint="#7A7788"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/prev_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/btn_green"
+                    android:contentDescription="prev question"
+                    android:minHeight="50dp"
+                    android:minWidth="50dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:drawableStart="@drawable/ic_baseline_arrow_back_24"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--                   android:drawableLeft="@drawable/ic_baseline_arrow_back_24" -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/btn_green"
+                    android:contentDescription="next question"
+                    android:minHeight="50dp"
+                    android:minWidth="50dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:drawableStart="@drawable/ic_baseline_arrow_forward_24"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:circularflow_radiusInDP="5dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

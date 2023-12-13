@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreentimePermissionActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/screentime_permissions_app_foreground"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/reason_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/reason_title"
+        android:text="Study Reason:"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@id/reason_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/reason_text"
+        android:text="@string/screentime_study"
+        android:gravity="left"
+        android:background="@drawable/text_gradient_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@id/terms_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="Terms and Privacy Policy:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/terms_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/terms_text"
+        android:text="@string/screentime_terms"
+        android:gravity="left"
+        android:background="@drawable/text_gradient_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <CheckBox
+        android:id="@+id/screentime_check_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/check_read"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/terms_text"
+        app:layout_constraintStart_toStartOf= "parent" />
+
+    <CheckBox
+        android:id="@+id/screentime_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/location_agree"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/screentime_check_terms"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/request_screentime"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/green_btn"
+        android:text="Request"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screentime_check" />
+
+    <Button
+        android:id="@+id/back_to_request_location"
+        android:layout_width="171dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="216dp"
+        android:background="@drawable/green_btn"
+        android:text="Back to Locations Permission"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screentime_check" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
